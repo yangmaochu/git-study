@@ -1,0 +1,27 @@
+{
+    "title": "Git 学习笔记",
+    "description": "个人在学习和使用 Git 过程中整理的心得和使用方法",
+    "author": "杨茂初",
+    "output.name": "site",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "root": ".",
+    "links": {
+        "sidebar": {
+            "作者主页": "https://github.com/yangmaochu"
+        }
+    },
+    "plugins": [
+        "-lunr",
+        "-search",
+        "search-plus",
+        "expandable-chapters",
+	"splitter"
+    ],
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        },
+	"expandable-chapters":{}
+    }
+}
