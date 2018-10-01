@@ -107,7 +107,13 @@ git branch -u ymc-nas/1st-edition
 git branch --set-upstream-to ymc-nas/1st-edition
 ```
 
-### 删除分支
+### 删除远程分支
+
+1. 删除远程仓库分支
 ```
 git push origin --delete serverfix
+```
+2. 删除本地无效的远程跟踪分支
+```
+git remote prune origin
 ```
