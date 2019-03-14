@@ -89,7 +89,7 @@ git push ymc-nas 1st-edition
 ```
 - 将本地的 serverfix 分支推送到远程仓库上的 awesomebranch 分支
 ```
-git push origin serverfix:awesomebranch 
+git push ymc-nas serverfix:awesomebranch 
 ```
 
 ### 跟踪分支
@@ -109,11 +109,15 @@ git branch --set-upstream-to ymc-nas/1st-edition
 
 ### 删除远程分支
 
-1. 删除远程仓库分支
+1. 删除本地分支(如果分支内容还未合入其它分支，参数中小写d改成大写D)
 ```
-git push origin --delete serverfix
+git branch -d serverfix
 ```
-2. 删除本地无效的远程跟踪分支
+2. 删除远程仓库分支
 ```
-git remote prune origin
+git push ymc-nas --delete serverfix
+```
+3. 删除本地无效的远程跟踪分支
+```
+git remote prune ymc-nas
 ```
